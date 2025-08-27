@@ -88,6 +88,10 @@ header {
     height: 12vh;
 }
 
+header img {
+    border-radius: 90px;
+}
+
 .nav-link {
     color: #ffffff;
     font-size: 18px;
@@ -129,7 +133,8 @@ header {
 
 /*--------------------------------------------------------------------------*/
 
-h2,h3 {
+h2,
+h3 {
     text-align: center;
     font-family: "Luckiest Guy";
     margin: 30px 0px 30px 0px;
@@ -147,6 +152,72 @@ a {
     text-align: center;
 }
 
+/*------PAGINA ADOPCION---------*/
+.introduccion {
+    text-align: center;
+}
+
+.introduccion p {
+    color: white;
+    font-size: 18px;
+}
+
+.h2-mobile {
+    display: none;
+}
+
+.perritos-adopcion {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+        "perro1 perro2 perro3"
+        "perro4 perro5 perro6";
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.perro1 {
+    grid-area: perro1;
+}
+
+.perro2 {
+    grid-area: perro2;
+}
+
+.perro3 {
+    grid-area: perro3;
+}
+
+.perro4 {
+    grid-area: perro4;
+}
+
+.perro5 {
+    grid-area: perro5;
+}
+
+.perro6 {
+    grid-area: perro6;
+}
+
+
+.imagen-card {
+    width: 200px !important;
+    height: 200px !important;
+    margin: auto;
+}
+
+.reflexionfinal {
+    margin-top: 70px;
+}
+
+.reflexionfinal p {
+    padding: 0px 200px 0px 200px;
+    text-align: center;
+    color: #ffffff;
+}
 
 /*-------TARJETAS---------*/
 
@@ -189,7 +260,7 @@ a {
     text-align: center;
 }
 
-.seccion-adopcion img{
+.seccion-adopcion img {
     display: none;
 }
 
@@ -200,175 +271,14 @@ a {
     margin-bottom: 30px;
 }
 
-/*------PAGINA CONTACTO---------*/
 
-.hubcontacto {
-    background-image: url(../multimedia/cccc.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 85vh;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: whitesmoke;
-    padding: 30px;
-
-}
-
-.contacto {
-    display: grid;
-    grid-template-areas: "pautas titulo-formulario"
-        "pautas formulario";
-
-    column-gap: 400px;
-    margin-top: 50px;
-
-}
-
-.pautas {
-    grid-area: pautas;
-    text-align: center;
-}
-
-.pautas ul {
-    list-style: circle;
-    text-align: center;
-    list-style-position: inside;
-    color: #ffffff;
-
-}
-
-.pautas ol {
-    text-align: center;
-    list-style-position: inside;
-    color: #ffffff;
-
-}
-
-.pautas h3 {
-    text-align: center;
-    font-family: "Luckiest Guy";
-    margin: 30px 0px 30px 0px;
-    color: #ffffff;
-    font-size: 30px;
-}
-
-.titulo-formulario {
-    grid-area: titulo-formulario;
-    width: 100%;
-}
-
-.formulario {
-    width: 50%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    background-color: #4e4e4e;
-    padding: 40px 20px 40px 20px;
-    border-radius: 5px;
-
-}
-
-.inputs,
-.opciones {
-    text-align: center;
-    background-color: #04329c;
-    padding: 3px;
-    color: #ffffff;
-}
-
-.formulario-bloque {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.formulario-bloque p {
-    text-align: center;
-    color: #ffffff;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-/*------PAGINA ADOPCION---------*/
-.introduccion{
-    text-align: center;
-}
-
-.introduccion p{
-    color: white;
-    font-size: 18px;
-}
-
-.h2-mobile{
-    display: none;
-}
-
-.perritos-adopcion {
-    margin-top: 50px;
-    display: grid;
-    grid-template-areas: 
-        "perro1 perro2 perro3"
-        "perro4 perro5 perro6";
-    gap: 50px;
-    justify-content: center;
-    text-align: center;
-}
-
-
-.perro1 {
-    grid-area: perro1;
-}
-
-.perro2 {
-    grid-area: perro2;
-}
-
-.perro3 {
-    grid-area: perro3;
-}
-
-.perro4 {
-    grid-area: perro4;
-}
-
-.perro5 {
-    grid-area: perro5;
-}
-
-.perro6 {
-    grid-area: perro6;
-}
-
-
-.imagen-card {
-    width: 200px !important;
-    height: 200px !important;
-    margin: auto;
-}
-
-.reflexionfinal{
-    margin-top: 70px;
-}
-
-.reflexionfinal p{
-    padding: 0px 200px 0px 200px;
-    text-align: center;
-    color: #ffffff;
-}
 
 /*------FOOTER---------*/
 footer {
     margin-top: 50px;
     display: grid;
     grid-template-areas: "menu horario contacto"
-                         "copy copy copy";
+        "copy copy copy";
     justify-content: space-around;
     color: #ffffff;
     background-color: #1b3d8d;
@@ -408,84 +318,145 @@ footer p {
 }
 
 /*RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR*/
-@media (max-width: 480px){
-/* PAGINA HOME */
+@media (max-width: 480px) {
 
-/*hub seccion*/
-.hubhome{
-    justify-content: center;
-}
-.hubhome P{
-    padding: 20px;
-}
+    /*HEADER*/
+    header {
+        height: 100px;
+    }
 
-/* tarjetas */
-.tarjetas h2{
-    font-size: 35px;
-}
-.padre-tarjetas{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    row-gap: 25px;
-}
+    header img {
+        width: 60px;
+        height: 60px;
+        border-radius: 80px;
+    }
 
-/* porque es bueno adoptar? */
-.seccion-adopcion{
-    padding: 30px;
-}
-.seccion-adopcion p{
-    padding: 0px;
-}
-
-.seccion-adopcion img{
-    width: 350px;
-    height: 250px;
-    margin-bottom: 20px;
-}
-
-.seccion-adopcion iframe{
-    margin-bottom: 20px ;
-}
-
-/* PAGINA PERRITOS ADOPCION*/
-/*hub*/
-.texto-hub{
-    padding: 20px;
-}
-
-/*ñerritos en adopcion*/
-.pagina-adopcion{
-    padding: 20px;
-}
-
-.perritos-adopcion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-}
-
-.h2-pc{
+     header nav .d-flex {
     display: none;
-}
-.h2-mobile{
-    display: block;
-    padding: 0px 10px 0px 10px;
-}
+  }
 
-.introduccion p{
-    padding: 0px 20px 0px 20px;
-}
+    .navbar-toggler {
+        border: none !important;
+    }
 
-/*reflexion final*/
-.reflexionfinal h3{
-    padding: 0px 10px 0px 10px;
-    font-size: 35px;
-}
+    .navbar-collapse {
+        background-color: #000d2b;
+        text-align: center;
+    }
 
-.reflexionfinal p{
-    padding: 0px 50px 0px 50px;
-}
+    .navbar-collapse li {
+
+        border: #fff 1px solid;
+    }
+
+    .nav-link.active {
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #0026ff;
+    }
+
+
+
+
+
+    /* PAGINA HOME */
+
+    /*hub seccion*/
+    .hubhome {
+        justify-content: center;
+    }
+
+    .hubhome P {
+        padding: 20px;
+    }
+
+    /* tarjetas */
+    .tarjetas h2 {
+        font-size: 35px;
+    }
+
+    .padre-tarjetas {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        row-gap: 25px;
+    }
+
+    /* porque es bueno adoptar? */
+    .seccion-adopcion {
+        padding: 30px;
+    }
+
+    .seccion-adopcion p {
+        padding: 0px;
+    }
+
+    .seccion-adopcion img {
+        width: 350px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .seccion-adopcion iframe {
+        margin-bottom: 20px;
+    }
+
+    /* PAGINA PERRITOS ADOPCION*/
+    /*hub*/
+    header .nav-link {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .hubperritos {
+        background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .texto-hub {
+        padding: 20px;
+    }
+
+    /*perritos en adopcion*/
+    .pagina-adopcion {
+        padding: 20px;
+    }
+
+    .perritos-adopcion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .h2-pc {
+        display: none;
+    }
+
+    .h2-mobile {
+        display: block;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .introduccion p {
+        padding: 0px 20px 0px 20px;
+    }
+
+    /*reflexion final*/
+    .reflexionfinal h3 {
+        padding: 0px 10px 0px 10px;
+        font-size: 35px;
+    }
+
+    .reflexionfinal p {
+        padding: 0px 50px 0px 50px;
+    }
 
 }
