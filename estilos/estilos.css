@@ -83,73 +83,42 @@ h1 {
 
 /*HEADER*/
 header {
-    padding: 15px;
-    background-color: #1b3d8d;
-    height: 12vh;
+    height: 100px;
 }
 
-header img {
-    border-radius: 90px;
+header a img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
 }
 
 .nav-link {
-    color: #ffffff;
-    font-size: 18px;
-}
-
-.navbar-nav {
-    gap: 20px;
+    color: white;
 }
 
 .nav-link:hover {
-    color: #0026ff;
+    color: #4e73ca;
 }
 
 .form-control {
-    background-color: #000d2b;
-}
-
-.form-control:hover {
-    background-color: #ffffff;
-    color: black;
+    background-color: #1b3d8d;
 }
 
 .btn {
     color: white;
-    background-color: #000d2b;
-    text-transform: uppercase;
+    background-color: #1b3d8d;
+    border: 1px solid white;
 }
 
-.btn-outline-success {
-    border-color: #ffffff;
+.btn:hover {
+    color: #1b3d8d;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #1b3d8d;
 }
 
-.btn-outline-success:hover {
-    background-color: #ffffff;
-    border-color: #000d2b;
-    color: #000d2b;
-
-}
-
-/*--------------------------------------------------------------------------*/
-
-h2,
-h3 {
-    text-align: center;
-    font-family: "Luckiest Guy";
-    margin: 30px 0px 30px 0px;
-    color: #4e73ca;
-    font-size: 40px;
-
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.adoptar {
-    text-align: center;
+ul {
+    gap: 30px;
 }
 
 /*------PAGINA ADOPCION---------*/
@@ -271,6 +240,72 @@ a {
     margin-bottom: 30px;
 }
 
+/*------PAGINA CONTACTO---------*/
+.hubcontacto {
+    background-image: url(../multimedia/cccc.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 88vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.pautas {
+    margin: auto;
+    text-align: center;
+}
+
+.pautas li {
+    list-style: inside;
+    color: #fff;
+}
+
+
+
+.formulario-bloque p {
+    color: #fff;
+    padding: 0px 100px 0px 100px;
+    text-align: center;
+}
+
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #4e73ca;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+input {
+    padding: 5px;
+    background-color: #fff;
+}
+
+label {
+    padding: 10px;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
 
 
 /*------FOOTER---------*/
@@ -281,9 +316,15 @@ footer {
         "copy copy copy";
     justify-content: space-around;
     color: #ffffff;
-    background-color: #1b3d8d;
+    background-color: #4e73ca;
     padding-top: 50px;
     align-items: start;
+}
+
+footer li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 footer h3 {
@@ -292,7 +333,7 @@ footer h3 {
 }
 
 footer p {
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .menu {
@@ -304,8 +345,9 @@ footer p {
     grid-area: horario;
 }
 
-.contacto {
+.footercontacto {
     grid-area: contacto;
+
 }
 
 .copy {
@@ -317,50 +359,60 @@ footer p {
     font-size: 25px;
 }
 
+
+h2 {
+    text-align: center;
+    font-family: "Luckiest Guy";
+    margin: 30px 0px 30px 0px;
+    color: #4e73ca;
+    font-size: 40px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Luckiest Guy";
+    margin: 30px 0px 30px 0px;
+    color: #4e73ca;
+    font-size: 30px;
+
+}
+
+
 /*RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR*/
 @media (max-width: 480px) {
 
     /*HEADER*/
-    header {
-        height: 100px;
-    }
 
-    header img {
+    header a img{
         width: 60px;
         height: 60px;
-        border-radius: 80px;
     }
-
-     header nav .d-flex {
-    display: none;
-  }
+    .navbar .collapse .d-flex {
+        display: none !important;
+    }
 
     .navbar-toggler {
-        border: none !important;
+        border: 0;
     }
 
-    .navbar-collapse {
-        background-color: #000d2b;
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler:focus-visible {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar .collapse .navbar-nav{
+        background-color: #1b3d8d;
         text-align: center;
+        border: 1px solid white;
+        gap: 0px;
     }
 
-    .navbar-collapse li {
-
-        border: #fff 1px solid;
+    .navbar .collapse .navbar-nav .nav-item{
+        border: 1px solid white;
+        padding: 5px;
     }
-
-    .nav-link.active {
-        color: white;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-        color: #fff;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover {
-        color: #0026ff;
-    }
-
 
 
 
@@ -405,6 +457,11 @@ footer p {
 
     .seccion-adopcion iframe {
         margin-bottom: 20px;
+    }
+
+    iframe{
+        justify-content: center;
+        margin: 0px;
     }
 
     /* PAGINA PERRITOS ADOPCION*/
@@ -458,5 +515,30 @@ footer p {
     .reflexionfinal p {
         padding: 0px 50px 0px 50px;
     }
+
+    footer{
+        display: grid;
+        grid-template-areas: "menu"
+                             "horario"
+                             "footercontacto"
+                             "copy"   ;
+                             margin: auto;
+                             text-align: center;
+    }
+    
+    footer .menu li{
+        list-style-position: inside;
+        text-align: center;
+    }
+
+    footer .menu ul{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .menu{grid-area: menu;}
+    .horario{grid-area: horario;}
+    .footercontacto{grid-area: footercontacto;} 
+    .copy{grid-area: copy;}   
 
 }

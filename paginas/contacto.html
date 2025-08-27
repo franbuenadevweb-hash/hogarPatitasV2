@@ -18,20 +18,23 @@
 
 <body>
 
-    <!--header-->
+
+    <!--------HEADER-------------------------------------------->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+        <nav class="navbar navbar-expand-lg  navbar-dark">
             <div class="container-fluid">
-                <a href="index.html"><img src="/multimedia/logo.png" alt="" height="70px" width="70px"></a>
+                <a class="navbar-brand" href="/index.html"><img src="/multimedia/logo.png" alt=""></a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="perritos.html">Perritos en adopcion</a>
@@ -39,18 +42,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
-
                     </ul>
 
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                        <input class="form-control me-2" type="search" placeholder="Inicia tu busqueda"
+                            aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <!---------------------------------------------------->
 
     <!--hub (primer secicon)-->
     <section class="hubcontacto">
@@ -64,27 +66,29 @@
 
     <section class="contacto">
         <div class="pautas">
-                <h2>Antes de completar el formulario lee algunas pautas</h2>
-                <ul>
-                    <li>Ser mayor de edad</li>
-                    <li>Contar con un espacio adecuado para el perro</li>
-                    <li>Comprometerse a brindarle atención veterinaria</li>
-                    <li>No usar al perro para fines comerciales ni reproducción</li>
-                    <li>Firmar un compromiso de adopción responsable</li>
-                </ul>
-                <h3>Pasos a seguir luego de llenar el formulario</h3>
-                <ol>
-                    <li>Esperá a que un voluntario revise tu solicitud (puede demorar hasta 48 hs)</li>
-                    <li>Te vamos a contactar por mail o WhatsApp para coordinar una videollamada</li>
-                    <li>En la charla te vamos a contar más sobre el perrito y resolver tus dudas</li>
-                    <li>Si todo va bien, coordinamos un encuentro presencial para conocerse.</li>
-                    <li>Finalmente, firmás el acta de adopción y te llevás a tu nuevo compañero a casa.</li>
-                </ol>
+            <h2>Antes de completar el formulario lee algunas pautas</h2>
+            <ul>
+                <li>Ser mayor de edad</li>
+                <li>Contar con un espacio adecuado para el perro</li>
+                <li>Comprometerse a brindarle atención veterinaria</li>
+                <li>No usar al perro para fines comerciales ni reproducción</li>
+                <li>Firmar un compromiso de adopción responsable</li>
+            </ul>
+            <h3>Pasos a seguir luego de llenar el formulario</h3>
+            <ol>
+                <li>Esperá a que un voluntario revise tu solicitud (puede demorar hasta 48 hs)</li>
+                <li>Te vamos a contactar por mail o WhatsApp para coordinar una videollamada</li>
+                <li>En la charla te vamos a contar más sobre el perrito y resolver tus dudas</li>
+                <li>Si todo va bien, coordinamos un encuentro presencial para conocerse.</li>
+                <li>Finalmente, firmás el acta de adopción y te llevás a tu nuevo compañero a casa.</li>
+            </ol>
         </div>
 
         <div class="formulario-bloque">
             <h2 class="titulo-formulario">Completa el formulario para contactarnos</h2>
-            <p>¿Te animás a cambiarle la vida a un perrito? 🐾 Completá este formulario y empezá el camino hacia una adopción responsable</p>
+            <p>¿Te animás a cambiarle la vida a un perrito? 🐾 Completá este formulario y empezá el camino hacia una
+                adopción responsable</p>
+
             <form action="" method="post" class="formulario">
                 <label for="Nombre">Nombre completo:</label>
                 <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre comlpeto" class="inputs">
@@ -96,22 +100,22 @@
                 <input type="email" name="correo" id="correo" placeholder="Ingresa tu email" class="inputs">
 
                 <label for="tamaño">¿Que tamaño de perro preferis?</label>
-                <select name="" id=""  >
+                <select name="" id="">
                     <option value="" class="opciones">Chico</option>
                     <option value="" class="opciones">Mediano</option>
                     <option value="" class="opciones">Grande</option>
                 </select>
 
-                <input type="submit" value="Enviar formulario">
-
+                <input type="submit" value="Enviar formulario" class="boton-enviar">
             </form>
+
         </div>
 
     </section>
 
 
 
-  <!--FOOTER-->
+    <!--FOOTER-->
     <footer>
         <div class="menu">
             <h3>Menu</h3>
@@ -128,7 +132,7 @@
             <p>Sabados: 10:00 a 13:00</p>
         </div>
 
-        <div class="contacto" style="display:block">
+        <div class="footercontacto" style="display:block">
             <h3>Contacto</h3>
             <p>Telefono: 11-3943-2822</p>
         </div>
