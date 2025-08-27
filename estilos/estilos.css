@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body {
+    background-color: #000d2b;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+/*HUB SECCION*/
+
+h1 {
+    font-family: "Luckiest Guy";
+    font-size: 40px;
+    color: #4e73ca;
+    font-weight: bold;
+
+}
+
+.boton {
+    background-color: #0026ff;
+    color: white;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: white solid 1px;
+}
+
+.boton:hover {
+    background-color: #000d2b;
+    color: rgb(255, 255, 255);
+
+}
+
+.hubhome {
+    background-image: url(../multimedia/fondo\ negro\ perro.jfif);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 88vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+
+.texto-hub {
+    font-size: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-weight: 400px;
+}
+
+.hubperritos {
+    background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 30px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*HEADER*/
+header {
+    padding: 15px;
+    background-color: #1b3d8d;
+    height: 12vh;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link:hover {
+    color: #0026ff;
+}
+
+.form-control {
+    background-color: #000d2b;
+}
+
+.form-control:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.btn {
+    color: white;
+    background-color: #000d2b;
+    text-transform: uppercase;
+}
+
+.btn-outline-success {
+    border-color: #ffffff;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffffff;
+    border-color: #000d2b;
+    color: #000d2b;
+
+}
+
+/*--------------------------------------------------------------------------*/
+
+h2,h3 {
+    text-align: center;
+    font-family: "Luckiest Guy";
+    margin: 30px 0px 30px 0px;
+    color: #4e73ca;
+    font-size: 40px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.adoptar {
+    text-align: center;
+}
+
+
+/*-------TARJETAS---------*/
+
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.padre-tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+}
+
+.boton-tarjetas {
+    background-color: #04329c;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.boton-tarjetas:hover {
+    background-color: #000d2b;
+    color: rgb(255, 255, 255);
+}
+
+
+.seccion-adopcion {
+    text-align: center;
+}
+
+.seccion-adopcion img{
+    display: none;
+}
+
+.seccion-adopcion p {
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 30px;
+}
+
+/*------PAGINA CONTACTO---------*/
+
+.hubcontacto {
+    background-image: url(../multimedia/cccc.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 30px;
+
+}
+
+.contacto {
+    display: grid;
+    grid-template-areas: "pautas titulo-formulario"
+        "pautas formulario";
+
+    column-gap: 400px;
+    margin-top: 50px;
+
+}
+
+.pautas {
+    grid-area: pautas;
+    text-align: center;
+}
+
+.pautas ul {
+    list-style: circle;
+    text-align: center;
+    list-style-position: inside;
+    color: #ffffff;
+
+}
+
+.pautas ol {
+    text-align: center;
+    list-style-position: inside;
+    color: #ffffff;
+
+}
+
+.pautas h3 {
+    text-align: center;
+    font-family: "Luckiest Guy";
+    margin: 30px 0px 30px 0px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.titulo-formulario {
+    grid-area: titulo-formulario;
+    width: 100%;
+}
+
+.formulario {
+    width: 50%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color: #4e4e4e;
+    padding: 40px 20px 40px 20px;
+    border-radius: 5px;
+
+}
+
+.inputs,
+.opciones {
+    text-align: center;
+    background-color: #04329c;
+    padding: 3px;
+    color: #ffffff;
+}
+
+.formulario-bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario-bloque p {
+    text-align: center;
+    color: #ffffff;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/*------PAGINA ADOPCION---------*/
+.introduccion{
+    text-align: center;
+}
+
+.introduccion p{
+    color: white;
+    font-size: 18px;
+}
+
+.h2-mobile{
+    display: none;
+}
+
+.perritos-adopcion {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: 
+        "perro1 perro2 perro3"
+        "perro4 perro5 perro6";
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.perro1 {
+    grid-area: perro1;
+}
+
+.perro2 {
+    grid-area: perro2;
+}
+
+.perro3 {
+    grid-area: perro3;
+}
+
+.perro4 {
+    grid-area: perro4;
+}
+
+.perro5 {
+    grid-area: perro5;
+}
+
+.perro6 {
+    grid-area: perro6;
+}
+
+
+.imagen-card {
+    width: 200px !important;
+    height: 200px !important;
+    margin: auto;
+}
+
+.reflexionfinal{
+    margin-top: 70px;
+}
+
+.reflexionfinal p{
+    padding: 0px 200px 0px 200px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*------FOOTER---------*/
+footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "menu horario contacto"
+                         "copy copy copy";
+    justify-content: space-around;
+    color: #ffffff;
+    background-color: #1b3d8d;
+    padding-top: 50px;
+    align-items: start;
+}
+
+footer h3 {
+    color: #000d2b;
+    font-weight: bold;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+
+.horario {
+    grid-area: horario;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.copy {
+    margin-top: 10px;
+    grid-area: copy;
+    text-align: center;
+    color: #000d2b;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR - RESPONSIVE CELULAR*/
+@media (max-width: 480px){
+/* PAGINA HOME */
+
+/*hub seccion*/
+.hubhome{
+    justify-content: center;
+}
+.hubhome P{
+    padding: 20px;
+}
+
+/* tarjetas */
+.tarjetas h2{
+    font-size: 35px;
+}
+.padre-tarjetas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 25px;
+}
+
+/* porque es bueno adoptar? */
+.seccion-adopcion{
+    padding: 30px;
+}
+.seccion-adopcion p{
+    padding: 0px;
+}
+
+.seccion-adopcion img{
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.seccion-adopcion iframe{
+    margin-bottom: 20px ;
+}
+
+/* PAGINA PERRITOS ADOPCION*/
+/*hub*/
+.texto-hub{
+    padding: 20px;
+}
+
+/*ñerritos en adopcion*/
+.pagina-adopcion{
+    padding: 20px;
+}
+
+.perritos-adopcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.h2-pc{
+    display: none;
+}
+.h2-mobile{
+    display: block;
+    padding: 0px 10px 0px 10px;
+}
+
+.introduccion p{
+    padding: 0px 20px 0px 20px;
+}
+
+/*reflexion final*/
+.reflexionfinal h3{
+    padding: 0px 10px 0px 10px;
+    font-size: 35px;
+}
+
+.reflexionfinal p{
+    padding: 0px 50px 0px 50px;
+}
+
+}
