@@ -392,7 +392,7 @@ h3 {
     }
 
     .navbar-toggler {
-        border: 0;
+        border: 0 ;
     }
 
     .navbar-toggler:focus,
