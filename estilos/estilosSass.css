@@ -28,7 +28,7 @@ body {
   font-size: 20px;
   padding-left: 150px;
   padding-right: 150px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 .hubhome .boton {
   background-color: #0026ff;
@@ -47,6 +47,11 @@ body {
 }
 
 /*Tarjetas*/
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
 .tarjetas h2 {
   text-align: center;
   font-family: "Luckiest Guy";
@@ -101,6 +106,127 @@ body {
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #000d2b;
+}
+
+.hubperritos {
+  background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: whitesmoke;
+  padding: 30px;
+}
+.hubperritos .texto-hub {
+  font-size: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-weight: 400;
+}
+
+.introduccion {
+  text-align: center;
+}
+.introduccion .h2-pc {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 40px;
+}
+.introduccion .h2-mobile {
+  display: none;
+}
+.introduccion p {
+  color: white;
+  font-size: 18px;
+}
+
+.perritos-adopcion {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas: "perro1 perro2 perro3" "perro4 perro5 perro6";
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.perritos-adopcion .perro1 {
+  grid-area: perro1;
+}
+.perritos-adopcion .perro1 .imagen-card {
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
+.perritos-adopcion .perro2 {
+  grid-area: perro2;
+}
+.perritos-adopcion .perro2 .imagen-card {
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
+.perritos-adopcion .perro3 {
+  grid-area: perro3;
+}
+.perritos-adopcion .perro3 .imagen-card {
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
+.perritos-adopcion .perro4 {
+  grid-area: perro4;
+}
+.perritos-adopcion .perro4 .imagen-card {
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
+.perritos-adopcion .perro5 {
+  grid-area: perro5;
+}
+.perritos-adopcion .perro5 .imagen-card {
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
+.perritos-adopcion .perro6 {
+  grid-area: perro6;
+}
+.perritos-adopcion .perro6 .imagen-card {
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
+
+.reflexionfinal {
+  margin-top: 70px;
+}
+.reflexionfinal h3 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 30px;
+}
+.reflexionfinal p {
+  padding: 0px 200px 0px 200px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*Body*/
+body {
+  background-color: #000d2b;
+}
+
 /*Header*/
 header {
   height: 100px;

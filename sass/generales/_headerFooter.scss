@@ -1,6 +1,12 @@
 @use "./variables" as*;
 
 
+/*Body*/
+body{
+    background-color: $color-fondo;
+}
+
+
 /*Header*/
 
 header {
