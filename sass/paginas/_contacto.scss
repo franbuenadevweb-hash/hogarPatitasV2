@@ -1,1 +1,124 @@
 @use "../generales/variables" as*;
+
+.hubcontacto {
+    background-image: url(../multimedia/cccc.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 88vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+
+    h1 {
+        font-family: "Luckiest Guy";
+        font-size: 40px;
+        color: #4e73ca;
+        font-weight: bold;
+    }
+
+    .texto-hub {
+        font-size: 20px;
+        padding-left: 150px;
+        padding-right: 150px;
+        font-weight: 400;
+    }
+
+    .boton {
+        background-color: #0026ff;
+        color: white;
+        padding: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 15px;
+        text-transform: uppercase;
+        border: white solid 1px;
+
+        &:hover {
+            background-color: #000d2b;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+    .pautas {
+        margin: auto;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+            font-family: "Luckiest Guy";
+            margin: 30px 0px 30px 0px;
+            color: #4e73ca;
+            font-size: 40px;
+        }
+
+        li {
+            list-style: inside;
+            color: #fff;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: "Luckiest Guy";
+            margin: 30px 0px 30px 0px;
+            color: #4e73ca;
+            font-size: 30px;
+        }
+    }
+}
+
+.formulario-bloque {
+    .titulo-formulario {
+        text-align: center;
+        font-family: "Luckiest Guy";
+        margin: 30px 0px 30px 0px;
+        color: #4e73ca;
+        font-size: 40px;
+    }
+
+    p{
+        color: #fff;
+        padding: 0px 100px 0px 100px;
+        text-align: center;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+        color: #fff;
+        background-color: #4e73ca;
+        padding: 15px;
+        border-radius: 20px;
+
+        label {
+            padding: 10px;
+        }
+
+        input {
+            padding: 5px;
+            background-color: #fff;
+        }
+
+        select {
+            margin-bottom: 10px;
+        }
+
+        /*boton-enviar{}*/
+
+    }
+
+
+}
