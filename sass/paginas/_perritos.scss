@@ -1,0 +1,140 @@
+@use "../generales/variables" as*;
+
+body {
+    background-color: #000d2b;}
+
+
+.hubperritos {
+    background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 30px;
+
+    .texto-hub {
+        font-size: 20px;
+        padding-left: 150px;
+        padding-right: 150px;
+        font-weight: 400;
+    }
+}
+
+.introduccion {
+    text-align: center;
+
+    .h2-pc {
+        text-align: center;
+        font-family: "Luckiest Guy";
+        margin: 30px 0px 30px 0px;
+        color: #4e73ca;
+        font-size: 40px;
+
+    }
+
+    .h2-mobile {
+        display: none;
+    }
+
+    p {
+        color: white;
+        font-size: 18px;
+    }
+
+}
+
+.perritos-adopcion {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+        "perro1 perro2 perro3"
+        "perro4 perro5 perro6";
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+
+    .perro1 {
+        grid-area: perro1;
+
+        .imagen-card {
+            width: 200px !important;
+            height: 200px !important;
+            margin: auto;
+        }
+    }
+
+    .perro2 {
+        grid-area: perro2;
+
+        .imagen-card {
+            width: 200px !important;
+            height: 200px !important;
+            margin: auto;
+        }
+    }
+
+    .perro3 {
+        grid-area: perro3;
+
+        .imagen-card {
+            width: 200px !important;
+            height: 200px !important;
+            margin: auto;
+        }
+    }
+
+    .perro4 {
+        grid-area: perro4;
+
+        .imagen-card {
+            width: 200px !important;
+            height: 200px !important;
+            margin: auto;
+        }
+    }
+
+    .perro5 {
+        grid-area: perro5;
+
+        .imagen-card {
+            width: 200px !important;
+            height: 200px !important;
+            margin: auto;
+        }
+    }
+
+    .perro6 {
+        grid-area: perro6;
+
+        .imagen-card {
+            width: 200px !important;
+            height: 200px !important;
+            margin: auto;
+        }
+    }
+
+
+
+}
+
+.reflexionfinal{
+    margin-top: 70px;
+    h3{
+           text-align: center;
+    font-family: "Luckiest Guy";
+    margin: 30px 0px 30px 0px;
+    color: #4e73ca;
+    font-size: 30px;
+    }
+    p{
+     padding: 0px 200px 0px 200px;
+    text-align: center;
+    color: #ffffff;   
+    }
+}

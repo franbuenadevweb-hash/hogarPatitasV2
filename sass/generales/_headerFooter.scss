@@ -1,0 +1,56 @@
+@use "./variables" as*;
+
+
+/*Header*/
+
+header {
+    height: 100px;
+
+    .container-fluid {
+        a img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50px;
+        }
+
+        .navbar-collapse {
+
+            ul {
+                gap: 30px;
+
+                .nav-link {
+                    color: white;
+
+                    &:hover {
+                        color: #4e73ca;
+                    }
+
+                }
+
+            }
+
+            .form-control {
+                background-color: #1b3d8d;
+            }
+
+            .btn {
+                color: white;
+                background-color: #1b3d8d;
+                border: 1px solid white;
+
+                &:hover {
+                    color: #1b3d8d;
+                    font-weight: bold;
+                    background-color: #fff;
+                    border: 1px solid #1b3d8d;
+                }
+            }
+
+
+
+
+        }
+    }
+}
+
+/*Footer*/

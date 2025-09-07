@@ -1,0 +1,139 @@
+/*Pagina index*/
+/*Hub*/
+body {
+  background-color: #000d2b;
+}
+
+.hubhome {
+  background-image: url(../multimedia/fondo\ negro\ perro.jfif);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 88vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+}
+.hubhome h1 {
+  font-family: "Luckiest Guy";
+  font-size: 40px;
+  color: #4e73ca;
+  font-weight: bold;
+}
+.hubhome .texto-hub {
+  font-size: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-weight: 400px;
+}
+.hubhome .boton {
+  background-color: #0026ff;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: white solid 1px;
+}
+.hubhome .boton:hover {
+  background-color: #000d2b;
+  color: rgb(255, 255, 255);
+}
+
+/*Tarjetas*/
+.tarjetas h2 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 35px;
+}
+.tarjetas .padre-tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px;
+}
+.tarjetas .padre-tarjetas .divpadre .card {
+  text-align: center;
+  padding: 20px;
+}
+.tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas {
+  background-color: #04329c;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas:hover {
+  background-color: #000d2b;
+  color: #fff;
+}
+
+/*Porque es bueno adoptar?*/
+.seccion-adopcion {
+  text-align: center;
+}
+.seccion-adopcion h2 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 40px;
+}
+.seccion-adopcion p {
+  color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 30px;
+}
+.seccion-adopcion img {
+  display: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*Header*/
+header {
+  height: 100px;
+}
+header .container-fluid a img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+header .container-fluid .navbar-collapse ul {
+  gap: 30px;
+}
+header .container-fluid .navbar-collapse ul .nav-link {
+  color: white;
+}
+header .container-fluid .navbar-collapse ul .nav-link:hover {
+  color: #4e73ca;
+}
+header .container-fluid .navbar-collapse .form-control {
+  background-color: #1b3d8d;
+}
+header .container-fluid .navbar-collapse .btn {
+  color: white;
+  background-color: #1b3d8d;
+  border: 1px solid white;
+}
+header .container-fluid .navbar-collapse .btn:hover {
+  color: #1b3d8d;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #1b3d8d;
+}
+
+/*Footer*/
+
+/*# sourceMappingURL=estilosSass.css.map */
