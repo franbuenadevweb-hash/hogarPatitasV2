@@ -222,6 +222,112 @@ body {
   color: #ffffff;
 }
 
+.hubcontacto {
+  background-image: url(../multimedia/cccc.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 88vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+}
+.hubcontacto h1 {
+  font-family: "Luckiest Guy";
+  font-size: 40px;
+  color: #4e73ca;
+  font-weight: bold;
+}
+.hubcontacto .texto-hub {
+  font-size: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-weight: 400;
+}
+.hubcontacto .boton {
+  background-color: #0026ff;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: white solid 1px;
+}
+.hubcontacto .boton:hover {
+  background-color: #000d2b;
+  color: rgb(255, 255, 255);
+}
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.contacto .pautas {
+  margin: auto;
+  text-align: center;
+}
+.contacto .pautas h2 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 40px;
+}
+.contacto .pautas li {
+  list-style: inside;
+  color: #fff;
+}
+.contacto .pautas h3 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 30px;
+}
+
+.formulario-bloque .titulo-formulario {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 40px;
+}
+.formulario-bloque p {
+  color: #fff;
+  padding: 0px 100px 0px 100px;
+  text-align: center;
+}
+.formulario-bloque .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #4e73ca;
+  padding: 15px;
+  border-radius: 20px;
+}
+.formulario-bloque .formulario label {
+  padding: 10px;
+}
+.formulario-bloque .formulario input {
+  padding: 5px;
+  background-color: #fff;
+}
+.formulario-bloque .formulario select {
+  margin-bottom: 10px;
+}
+.formulario-bloque .formulario {
+  /*boton-enviar{}*/
+}
+
 /*Body*/
 body {
   background-color: #000d2b;
@@ -260,6 +366,49 @@ header .container-fluid .navbar-collapse .btn:hover {
   border: 1px solid #1b3d8d;
 }
 
-/*Footer*/
+/* Footer */
+footer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas: "menu horario contacto" "copy copy copy";
+  justify-content: space-around;
+  color: #ffffff;
+  background-color: #4e73ca;
+  padding-top: 50px;
+  align-items: start;
+}
+footer h3 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0;
+  color: #000d2b;
+  font-size: 30px;
+  font-weight: bold;
+}
+footer p {
+  font-size: 20px;
+}
+footer .menu {
+  grid-area: menu;
+}
+footer .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+footer .horario {
+  grid-area: horario;
+}
+footer .footercontacto {
+  grid-area: contacto;
+}
+footer .copy {
+  margin-top: 10px;
+  grid-area: copy;
+  text-align: center;
+  color: #000d2b;
+  font-weight: bold;
+  font-size: 25px;
+}
 
-/*# sourceMappingURL=estilosSass.css.map */
+/*# sourceMappingURL=estilosScss.css.map */
