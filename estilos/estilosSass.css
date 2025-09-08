@@ -412,6 +412,35 @@ footer .copy {
 }
 
 @media (max-width: 480px) {
+  /*HEADER*/
+  header img {
+    width: 60px;
+    height: 60px;
+  }
+  header .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  header .navbar .collapse .d-flex {
+    display: none !important;
+  }
+  header .navbar .collapse .navbar-nav {
+    background-color: #1b3d8d;
+    text-align: center;
+    border: 1px solid white;
+    gap: 0;
+  }
+  header .navbar .collapse .navbar-nav .nav-item {
+    border: 1px solid white;
+    padding: 5px;
+  }
+  header .navbar .navbar-toggler {
+    border: 0;
+  }
+  header .navbar .navbar-toggler:focus, header .navbar .navbar-toggler:active, header .navbar .navbar-toggler:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
   /*HOME*/
   /*seccion hero*/
   .hubhome {
@@ -480,6 +509,33 @@ footer .copy {
   }
   .reflexionfinal p {
     padding: 0px 50px 0px 50px;
+  }
+  /*FOOTER*/
+  footer {
+    display: grid;
+    grid-template-areas: "menu" "horario" "footercontacto" "copy";
+    margin: auto;
+    text-align: center;
+  }
+  footer .menu {
+    grid-area: menu;
+  }
+  footer .menu ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  footer .menu ul li {
+    list-style-position: inside;
+    text-align: center;
+  }
+  footer .horario {
+    grid-area: horario;
+  }
+  footer .footercontacto {
+    grid-area: footercontacto;
+  }
+  footer .copy {
+    grid-area: copy;
   }
 }
 

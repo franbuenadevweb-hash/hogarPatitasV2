@@ -1,6 +1,50 @@
 @use "./variables" as*;
 @media (max-width: 480px) {
 
+    /*HEADER*/
+    header {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .navbar {
+            .collapse {
+                .d-flex {
+                    display: none !important;
+                }
+
+                .navbar-nav {
+                    background-color: #1b3d8d;
+                    text-align: center;
+                    border: 1px solid white;
+                    gap: 0;
+
+                    .nav-item {
+                        border: 1px solid white;
+                        padding: 5px;
+                    }
+                }
+            }
+
+            .navbar-toggler {
+                border: 0;
+
+                &:focus,
+                &:active,
+                &:focus-visible {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
     /*HOME*/
     /*seccion hero*/
     .hubhome {
@@ -14,6 +58,7 @@
 
     /*seccion tarjetas*/
     .tarjetas {
+    
         h2 {
             font-size: 35px;
         }
@@ -93,5 +138,43 @@
         p {
             padding: 0px 50px 0px 50px;
         }
+    }
+
+    /*FOOTER*/
+    footer {
+        display: grid;
+        grid-template-areas: "menu"
+            "horario"
+            "footercontacto"
+            "copy";
+        margin: auto;
+        text-align: center;
+
+        .menu {
+            grid-area: menu;
+
+            ul {
+                margin: 0px;
+                padding: 0px;
+
+                li {
+                    list-style-position: inside;
+                    text-align: center;
+                }
+            }
+        }
+
+        .horario {
+            grid-area: horario;
+        }
+
+        .footercontacto {
+            grid-area: footercontacto;
+        }
+
+        .copy {
+            grid-area: copy;
+        }
+
     }
 }
