@@ -481,7 +481,7 @@ h3 {
         font-size: 18px;
     }
 
-    .hubperritos {
+    /*.hubperritos {
         background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
         background-size: cover;
         background-position: center;
@@ -489,10 +489,10 @@ h3 {
 
     .texto-hub {
         padding: 20px;
-    }
+    }*/
 
     /*perritos en adopcion*/
-    .pagina-adopcion {
+    /*.pagina-adopcion {
         padding: 20px;
     }
 
@@ -514,17 +514,17 @@ h3 {
 
     .introduccion p {
         padding: 0px 20px 0px 20px;
-    }
+    }*/
 
     /*reflexion final*/
-    .reflexionfinal h3 {
+    /*.reflexionfinal h3 {
         padding: 0px 10px 0px 10px;
         font-size: 35px;
     }
 
     .reflexionfinal p {
         padding: 0px 50px 0px 50px;
-    }
+    }*/
 
     footer {
         display: grid;

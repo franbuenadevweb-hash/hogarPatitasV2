@@ -47,5 +47,51 @@
         }
     }
 
+    /*PAGINA ADOPCION DE PERROS*/
+    .hubperritos {
+        background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
+        background-size: cover;
+        background-position: center;
 
+        .texto-hub {
+            padding: 20px;
+        }
+    }
+
+    .pagina-adopcion {
+        padding: 20px;
+
+        .introduccion {
+
+            .h2-pc {
+                display: none;
+            }
+
+            .h2-mobile {
+                display: block;
+                padding: 0px 10px 0px 10px;
+            }
+
+            p {
+                padding: 0px 20px 0px 20px;
+            }
+        }
+
+        .perritos-adopcion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .reflexionfinal {
+        h3 {
+            padding: 0px 10px 0px 10px;
+            font-size: 35px;
+        }
+
+        p {
+            padding: 0px 50px 0px 50px;
+        }
+    }
 }

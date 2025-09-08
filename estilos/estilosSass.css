@@ -411,4 +411,76 @@ footer .copy {
   font-size: 25px;
 }
 
-/*# sourceMappingURL=estilosScss.css.map */
+@media (max-width: 480px) {
+  /*HOME*/
+  /*seccion hero*/
+  .hubhome {
+    justify-content: center;
+  }
+  .hubhome p {
+    padding: 20px;
+  }
+  /*seccion tarjetas*/
+  .tarjetas h2 {
+    font-size: 35px;
+  }
+  .tarjetas .padre-tarjetas {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 25px;
+  }
+  /*seccion adopcion*/
+  .seccion-adopcion {
+    padding: 30px;
+  }
+  .seccion-adopcion p {
+    padding: 0px;
+  }
+  .seccion-adopcion iframe {
+    margin-bottom: 20px;
+    justify-content: center;
+    margin: 0px;
+  }
+  .seccion-adopcion img {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  /*PAGINA ADOPCION DE PERROS*/
+  .hubperritos {
+    background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .hubperritos .texto-hub {
+    padding: 20px;
+  }
+  .pagina-adopcion {
+    padding: 20px;
+  }
+  .pagina-adopcion .introduccion .h2-pc {
+    display: none;
+  }
+  .pagina-adopcion .introduccion .h2-mobile {
+    display: block;
+    padding: 0px 10px 0px 10px;
+  }
+  .pagina-adopcion .introduccion p {
+    padding: 0px 20px 0px 20px;
+  }
+  .pagina-adopcion .perritos-adopcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reflexionfinal h3 {
+    padding: 0px 10px 0px 10px;
+    font-size: 35px;
+  }
+  .reflexionfinal p {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+/*# sourceMappingURL=estilosSass.css.map */
