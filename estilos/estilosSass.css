@@ -264,68 +264,57 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.contacto {
+/*seccion contacto*/
+.seccion-contacto {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
 }
-.contacto .pautas {
-  margin: auto;
-  text-align: center;
+.seccion-contacto .pautas {
+  width: 50%;
+  background-color: aliceblue;
 }
-.contacto .pautas h2 {
-  text-align: center;
-  font-family: "Luckiest Guy";
-  margin: 30px 0px 30px 0px;
-  color: #4e73ca;
-  font-size: 40px;
-}
-.contacto .pautas li {
-  list-style: inside;
-  color: #fff;
-}
-.contacto .pautas h3 {
-  text-align: center;
-  font-family: "Luckiest Guy";
-  margin: 30px 0px 30px 0px;
-  color: #4e73ca;
-  font-size: 30px;
-}
-
-.formulario-bloque .titulo-formulario {
-  text-align: center;
-  font-family: "Luckiest Guy";
-  margin: 30px 0px 30px 0px;
-  color: #4e73ca;
-  font-size: 40px;
-}
-.formulario-bloque p {
-  color: #fff;
-  padding: 0px 100px 0px 100px;
-  text-align: center;
-}
-.formulario-bloque .formulario {
+.seccion-contacto .conteiner-formulario {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  width: 50%;
   text-align: center;
-  color: #fff;
-  background-color: #4e73ca;
-  padding: 15px;
+  align-items: center;
+}
+.seccion-contacto .conteiner-formulario h2 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 35px;
+}
+.seccion-contacto .conteiner-formulario p {
+  color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 30px;
+}
+.seccion-contacto .conteiner-formulario .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: #4352a8;
   border-radius: 20px;
 }
-.formulario-bloque .formulario label {
+.seccion-contacto .conteiner-formulario .formulario label {
   padding: 10px;
+  color: #000d2b;
+  font-weight: bold;
 }
-.formulario-bloque .formulario input {
+.seccion-contacto .conteiner-formulario .formulario input {
   padding: 5px;
-  background-color: #fff;
 }
-.formulario-bloque .formulario select {
+.seccion-contacto .conteiner-formulario .formulario input:hover {
+  background-color: grey;
+}
+.seccion-contacto .conteiner-formulario .formulario select {
   margin-bottom: 10px;
-}
-.formulario-bloque .formulario {
-  /*boton-enviar{}*/
 }
 
 /*Body*/

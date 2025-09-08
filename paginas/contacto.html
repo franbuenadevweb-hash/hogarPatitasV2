@@ -63,10 +63,11 @@
         <a href="./paginas/perritos.html" class="boton">Ver perritos</a>
     </section>
     <!------------------------>
-
-    <section class="contacto">
+    <!--Seccion Contacto-->
+    <section class="seccion-contacto">
         <div class="pautas">
-            <h2>Antes de completar el formulario lee algunas pautas</h2>
+
+            <h3>Antes de completar el formulario lee algunas pautas</h3>
             <ul>
                 <li>Ser mayor de edad</li>
                 <li>Contar con un espacio adecuado para el perro</li>
@@ -74,7 +75,9 @@
                 <li>No usar al perro para fines comerciales ni reproducción</li>
                 <li>Firmar un compromiso de adopción responsable</li>
             </ul>
+
             <h3>Pasos a seguir luego de llenar el formulario</h3>
+
             <ol>
                 <li>Esperá a que un voluntario revise tu solicitud (puede demorar hasta 48 hs)</li>
                 <li>Te vamos a contactar por mail o WhatsApp para coordinar una videollamada</li>
@@ -82,35 +85,37 @@
                 <li>Si todo va bien, coordinamos un encuentro presencial para conocerse.</li>
                 <li>Finalmente, firmás el acta de adopción y te llevás a tu nuevo compañero a casa.</li>
             </ol>
-        </div>
-
-        <div class="formulario-bloque">
-            <h2 class="titulo-formulario">Completa el formulario para contactarnos</h2>
-            <p>¿Te animás a cambiarle la vida a un perrito? 🐾 Completá este formulario y empezá el camino hacia una
-                adopción responsable</p>
-
-            <form action="" method="post" class="formulario">
-                <label for="Nombre">Nombre completo:</label>
-                <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre comlpeto" class="inputs">
-
-                <label for="telefono">Numero de telefono:</label>
-                <input type="number" name="telefono" id="telefono" placeholder="+54 9 xx-xxxx-xxxx" class="inputs">
-
-                <label for="correo">Correo electronico:</label>
-                <input type="email" name="correo" id="correo" placeholder="Ingresa tu email" class="inputs">
-
-                <label for="tamaño">¿Que tamaño de perro preferis?</label>
-                <select name="" id="">
-                    <option value="" class="opciones">Chico</option>
-                    <option value="" class="opciones">Mediano</option>
-                    <option value="" class="opciones">Grande</option>
-                </select>
-
-                <input type="submit" value="Enviar formulario" class="boton-enviar">
-            </form>
 
         </div>
+        <div class="conteiner-formulario">
+            <div class="intro-formulario">
+                <h2>Completa el formulario para contactarnos</h2>
+                <p>¿Te animás a cambiarle la vida a un perrito? 🐾 Completá este formulario y empezá el camino hacia una
+                    adopción responsable</p>
+            </div>
 
+            <div class="caja2formulario">
+                <form action="" method="post" class="formulario">
+                    <label for="Nombre">Nombre completo:</label>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre comlpeto">
+
+                    <label for="telefono">Numero de telefono:</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="+54 9 xx-xxxx-xxxx">
+
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu email">
+
+                    <label for="tamaño">¿Que tamaño de perro preferis?</label>
+                    <select name="" id="">
+                        <option value="">Chico</option>
+                        <option value="">Mediano</option>
+                        <option value="">Grande</option>
+                    </select>
+
+                    <input type="submit" value="Enviar formulario">
+                </form>
+            </div>
+        </div>
     </section>
 
 
