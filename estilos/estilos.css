@@ -430,16 +430,16 @@ h3 {
     /* PAGINA HOME */
 
     /*hub seccion*/
-    .hubhome {
+    /*.hubhome {
         justify-content: center;
     }
 
     .hubhome P {
         padding: 20px;
-    }
+    }*/
 
     /* tarjetas */
-    .tarjetas h2 {
+    /*.tarjetas h2 {
         font-size: 35px;
     }
 
@@ -448,10 +448,10 @@ h3 {
         flex-direction: column;
         margin: auto;
         row-gap: 25px;
-    }
+    } */
 
     /* porque es bueno adoptar? */
-    .seccion-adopcion {
+    /*.seccion-adopcion {
         padding: 30px;
     }
 
@@ -472,7 +472,7 @@ h3 {
     iframe {
         justify-content: center;
         margin: 0px;
-    }
+    }*/
 
     /* PAGINA PERRITOS ADOPCION*/
     /*hub*/

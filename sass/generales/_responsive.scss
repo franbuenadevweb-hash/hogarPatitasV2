@@ -1,0 +1,51 @@
+@use "./variables" as*;
+@media (max-width: 480px) {
+
+    /*HOME*/
+    /*seccion hero*/
+    .hubhome {
+        justify-content: center;
+
+        p {
+            padding: 20px;
+        }
+
+    }
+
+    /*seccion tarjetas*/
+    .tarjetas {
+        h2 {
+            font-size: 35px;
+        }
+
+        .padre-tarjetas {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            row-gap: 25px;
+        }
+    }
+
+    /*seccion adopcion*/
+    .seccion-adopcion {
+        padding: 30px;
+
+        p {
+            padding: 0px;
+        }
+
+        iframe {
+            margin-bottom: 20px;
+            justify-content: center;
+            margin: 0px;
+        }
+
+        img {
+            width: 350px;
+            height: 250px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+}
