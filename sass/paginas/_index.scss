@@ -86,6 +86,13 @@ body {
                 transform: translateY(20px);
                 animation: aparecer 5s ease forwards;
 
+                h5{
+                    font-weight: bold;
+                    color: $color-primario;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+
                 .boton-tarjetas {
                     background-color: #04329c;
                     color: $color-texto;

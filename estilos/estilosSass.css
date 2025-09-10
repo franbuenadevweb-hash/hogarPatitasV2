@@ -87,6 +87,12 @@ body {
   transform: translateY(20px);
   animation: aparecer 5s ease forwards;
 }
+.tarjetas .padre-tarjetas .divpadre .card h5 {
+  font-weight: bold;
+  color: #000d2b;
+  font-size: 16px;
+  text-transform: uppercase;
+}
 .tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas {
   background-color: #04329c;
   color: #ffffff;
@@ -480,6 +486,7 @@ footer .copy {
   /*seccion hero*/
   .hubhome {
     background-image: url(https://www.shutterstock.com/image-photo/breton-spaniel-dog-black-scarf-600nw-2461745759.jpg);
+    background-size: cover;
   }
   .hubhome .texto-hub {
     padding: 10px;
