@@ -1,6 +1,7 @@
 @use "../generales/variables" as*;
 @use "../generales/extend";
 @use "../generales/mixin" as*;
+
 /*Pagina index*/
 /*Hub*/
 body {
@@ -75,10 +76,15 @@ body {
         justify-content: center;
         column-gap: 50px;
 
+
+
         .divpadre {
             .card {
                 text-align: center;
                 padding: 20px;
+                opacity: 0;
+                transform: translateY(20px);
+                animation: aparecer 5s ease forwards;
 
                 .boton-tarjetas {
                     background-color: #04329c;
@@ -96,6 +102,14 @@ body {
                     }
                 }
             }
+
+            @keyframes aparecer{
+                to{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
         }
 
     }

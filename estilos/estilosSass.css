@@ -83,6 +83,9 @@ body {
 .tarjetas .padre-tarjetas .divpadre .card {
   text-align: center;
   padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 5s ease forwards;
 }
 .tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas {
   background-color: #04329c;
@@ -97,6 +100,12 @@ body {
 .tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas:hover {
   background-color: #000d2b;
   color: #ffffff;
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*Porque es bueno adoptar?*/
@@ -469,6 +478,9 @@ footer .copy {
   }
   /*HOME*/
   /*seccion hero*/
+  .hubhome {
+    background-image: url(https://www.shutterstock.com/image-photo/breton-spaniel-dog-black-scarf-600nw-2461745759.jpg);
+  }
   .hubhome .texto-hub {
     padding: 10px;
   }
