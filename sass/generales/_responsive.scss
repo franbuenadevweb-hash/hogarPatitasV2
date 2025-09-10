@@ -48,7 +48,7 @@
     /*HOME*/
     /*seccion hero*/
     .hubhome {
-       .texto-hub {
+        .texto-hub {
             padding: 10px;
         }
 
@@ -68,6 +68,20 @@
             flex-direction: column;
             margin: auto;
             row-gap: 25px;
+        }
+
+        .card{
+            opacity: 0;
+            transform: translateY(20px);
+            animation: aparecer 5s ease forwards;
+
+        }
+
+        @keyframes aparecer{
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 
@@ -144,49 +158,75 @@
         }
     }
 
-    /*CONTACTO*/
+
+
+    /* CONTACTO */
 
     /*hero seccion*/
-    .hubcontacto{
+    .hubcontacto {
         background-image: url(https://s1.1zoom.me/b5649/37/Dogs_Welsh_Corgi_Trunk_tree_Glance_520800_1080x1920.jpg);
         background-position: 150%;
         background-size: cover;
-        .texto-hub{
+
+        .texto-hub {
             padding: 10px;
             color: $color-texto;
         }
     }
 
-    .seccion-contacto{
+    .seccion-contacto {
         display: flex;
         flex-direction: column;
-       .pautas{
-        ul , ol{
-            margin-right: 30px;
-        }
-        width: 100%;
-        padding: 30px;
-        iframe{
-            width: 300px;
-            height: 200px;
-        }
-       }
-    }
 
-    .conteiner-formulario{
-        display: flex;
-        flex-direction: row;
-   
-        .intro-formulario{
+        .pautas {
+
+            ul,
+            ol {
+                margin-right: 30px;
+            }
+
             width: 100%;
-            text-align: center;
-            
-            p{
-                padding: 0px;
+            padding: 30px;
+
+            iframe {
+                width: 300px;
+                height: 200px;
             }
         }
 
+        .conteiner-formulario {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            padding: 20px;
+
+            .intro-formulario {
+                width: 100%;
+                text-align: center;
+
+                p {
+                    padding: 0px;
+                }
+            }
+
+            .bloque-perros {
+                display: flex;
+                flex-direction: column !important;
+                align-items: center;
+                row-gap: 15px;
+
+                img {
+                    width: 90%;
+                    max-width: 300px;
+                    height: auto;
+                    border-radius: 12px;
+                }
+            }
+        }
     }
+
 
 
 

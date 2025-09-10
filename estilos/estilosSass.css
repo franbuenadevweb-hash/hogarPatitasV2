@@ -5,7 +5,7 @@
   margin: auto;
 }
 
-.titulo-secundario, .seccion-contacto .conteiner-formulario .ultimas-adopciones h4 {
+.titulo-secundario, .seccion-contacto .conteiner-formulario .ultimas-adopciones h4, .hubperritos h1 {
   text-align: center;
   font-family: "Luckiest Guy";
   margin: 30px 0px 30px 0px;
@@ -482,6 +482,17 @@ footer .copy {
     margin: auto;
     row-gap: 25px;
   }
+  .tarjetas .card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 5s ease forwards;
+  }
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   /*seccion adopcion*/
   .seccion-adopcion {
     padding: 30px;
@@ -537,7 +548,7 @@ footer .copy {
   .reflexionfinal p {
     padding: 0px 50px 0px 50px;
   }
-  /*CONTACTO*/
+  /* CONTACTO */
   /*hero seccion*/
   .hubcontacto {
     background-image: url(https://s1.1zoom.me/b5649/37/Dogs_Welsh_Corgi_Trunk_tree_Glance_520800_1080x1920.jpg);
@@ -552,7 +563,8 @@ footer .copy {
     display: flex;
     flex-direction: column;
   }
-  .seccion-contacto .pautas ul, .seccion-contacto .pautas ol {
+  .seccion-contacto .pautas ul,
+  .seccion-contacto .pautas ol {
     margin-right: 30px;
   }
   .seccion-contacto .pautas {
@@ -563,16 +575,32 @@ footer .copy {
     width: 300px;
     height: 200px;
   }
-  .conteiner-formulario {
+  .seccion-contacto .conteiner-formulario {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
   }
-  .conteiner-formulario .intro-formulario {
+  .seccion-contacto .conteiner-formulario .intro-formulario {
     width: 100%;
     text-align: center;
   }
-  .conteiner-formulario .intro-formulario p {
+  .seccion-contacto .conteiner-formulario .intro-formulario p {
     padding: 0px;
+  }
+  .seccion-contacto .conteiner-formulario .bloque-perros {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .seccion-contacto .conteiner-formulario .bloque-perros img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
   }
   /*FOOTER*/
   footer {

@@ -20,6 +20,10 @@ body {
     color: $color-texto;
     padding: 30px;
 
+    h1 {
+        @extend .titulo-secundario;
+    }
+
     .texto-hub {
         font-size: 20px;
         padding-left: 150px;
@@ -154,5 +158,3 @@ body {
         color: $color-texto;
     }
 }
-
-
