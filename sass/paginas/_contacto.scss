@@ -1,4 +1,6 @@
 @use "../generales/variables" as*;
+@use "../generales/extend";
+@use "../generales/mixin" as *;
 
 .hubcontacto {
     background-image: url(../multimedia/cccc.jpg);
@@ -11,14 +13,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: rgb(255, 255, 255);
+    color: $color-texto;
     padding: 30px;
 
     h1 {
-        font-family: "Luckiest Guy";
+        @include titulo(40px, $color-secundario);
+       /* font-family: "Luckiest Guy";
         font-size: 40px;
-        color: #4e73ca;
-        font-weight: bold;
+        color: $color-secundario;
+        font-weight: bold;*/
     }
 
     .texto-hub {
@@ -30,18 +33,18 @@
 
     .boton {
         background-color: #0026ff;
-        color: white;
+        color: $color-texto;
         padding: 15px;
         border-radius: 3px;
         cursor: pointer;
         transition: background-color 0.3s ease;
         font-size: 15px;
         text-transform: uppercase;
-        border: white solid 1px;
+        border: $color-texto solid 1px;
 
         &:hover {
-            background-color: #000d2b;
-            color: rgb(255, 255, 255);
+            background-color: $color-primario;
+            color: $color-texto
         }
     }
 }
@@ -54,7 +57,20 @@
 
     .pautas {
         width: 50%;
-        background-color: aliceblue;
+        text-align: center;
+
+        h3 {
+            text-align: center;
+            font-family: "Luckiest Guy";
+            margin: 30px 0px 30px 0px;
+            color: $color-secundario;
+            font-size: 35px;
+        }
+    }
+
+    li {
+        color: $color-texto;
+        list-style-position: inside;
     }
 
     .conteiner-formulario {
@@ -68,12 +84,12 @@
             text-align: center;
             font-family: "Luckiest Guy";
             margin: 30px 0px 30px 0px;
-            color: #4e73ca;
+            color: $color-secundario;
             font-size: 35px;
         }
 
         p {
-            color: white;
+            color: $color-texto;
             padding-left: 150px;
             padding-right: 150px;
             margin-bottom: 30px;
@@ -85,12 +101,12 @@
             width: 100%;
             text-align: center;
             padding: 30px;
-            background-color: #4352a8;
+            background-color: $color-secundario;
             border-radius: 20px;
 
             label {
                 padding: 10px;
-                color: #000d2b;
+                color: $color-primario;
                 font-weight: bold;
             }
 
@@ -106,6 +122,32 @@
                 margin-bottom: 10px;
             }
         }
+
+
+        .ultimas-adopciones {
+            margin-top: 20px;
+
+            h4 {
+                font-size: 35px;
+                @extend .titulo-secundario;
+            }
+
+            .bloque-perros {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+                column-gap: 15px;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+
+
+            }
+
+        }
+
 
     }
 

@@ -1,9 +1,10 @@
 @use "../generales/variables" as*;
-
+@use "../generales/extend";
+@use "../generales/mixin" as*;
 /*Pagina index*/
 /*Hub*/
 body {
-    background-color: #000d2b;
+    background-color: $color-primario;
 }
 
 .hubhome {
@@ -17,13 +18,13 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: rgb(255, 255, 255);
+    color: $color-texto;
     padding: 30px;
 
     h1 {
         font-family: "Luckiest Guy";
         font-size: 40px;
-        color: #4e73ca;
+        color: $color-secundario;
         font-weight: bold;
 
     }
@@ -37,18 +38,18 @@ body {
 
     .boton {
         background-color: #0026ff;
-        color: white;
+        color: $color-texto;
         padding: 15px;
         border-radius: 3px;
         cursor: pointer;
         transition: background-color 0.3 ease;
         font-size: 15px;
         text-transform: uppercase;
-        border: white solid 1px;
+        border: $color-texto solid 1px;
 
         &:hover {
-            background-color: #000d2b;
-            color: rgb(255, 255, 255);
+            background-color: $color-primario;
+            color: $color-texto;
         }
     }
 }
@@ -64,7 +65,7 @@ body {
         text-align: center;
         font-family: "Luckiest Guy";
         margin: 30px 0px 30px 0px;
-        color: #4e73ca;
+        color: $color-secundario;
         font-size: 35px;
     }
 
@@ -81,7 +82,7 @@ body {
 
                 .boton-tarjetas {
                     background-color: #04329c;
-                    color: white;
+                    color: $color-texto;
                     padding: 10px;
                     border-radius: 3px;
                     cursor: pointer;
@@ -90,8 +91,8 @@ body {
                     text-transform: uppercase;
 
                     &:hover {
-                        background-color: #000d2b;
-                        color: #fff;
+                        background-color: $color-primario;
+                        color: $color-texto;
                     }
                 }
             }

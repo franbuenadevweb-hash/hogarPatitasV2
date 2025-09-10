@@ -2,6 +2,7 @@
 @use "./paginas/index";
 @use "./paginas/perritos";
 @use "./paginas/contacto";
-@use "./responsive/mediaQ.scss";
 @use "./generales/headerFooter";
 @use "./generales/responsive";
+@use "./generales/extend";
+@use "./generales/mixin";

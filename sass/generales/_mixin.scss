@@ -1,0 +1,6 @@
+@mixin titulo($size, $color) {
+  font-family: "Luckiest Guy";
+  font-weight: bold;
+  font-size: $size;
+  color: $color;
+}

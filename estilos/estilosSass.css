@@ -1,3 +1,18 @@
+.imagen-base, .perritos-adopcion .perro1 .imagen-card, .perritos-adopcion .perro2 .imagen-card, .perritos-adopcion .perro3 .imagen-card, .perritos-adopcion .perro4 .imagen-card, .perritos-adopcion .perro5 .imagen-card, .perritos-adopcion .perro6 .imagen-card {
+  padding: 20px;
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
+
+.titulo-secundario, .seccion-contacto .conteiner-formulario .ultimas-adopciones h4 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 40px;
+}
+
 /*Pagina index*/
 /*Hub*/
 body {
@@ -15,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   padding: 30px;
 }
 .hubhome h1 {
@@ -32,18 +47,18 @@ body {
 }
 .hubhome .boton {
   background-color: #0026ff;
-  color: white;
+  color: #ffffff;
   padding: 15px;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3 ease;
   font-size: 15px;
   text-transform: uppercase;
-  border: white solid 1px;
+  border: #ffffff solid 1px;
 }
 .hubhome .boton:hover {
   background-color: #000d2b;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 /*Tarjetas*/
@@ -71,7 +86,7 @@ body {
 }
 .tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas {
   background-color: #04329c;
-  color: white;
+  color: #ffffff;
   padding: 10px;
   border-radius: 3px;
   cursor: pointer;
@@ -81,7 +96,7 @@ body {
 }
 .tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas:hover {
   background-color: #000d2b;
-  color: #fff;
+  color: #ffffff;
 }
 
 /*Porque es bueno adoptar?*/
@@ -121,7 +136,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: whitesmoke;
+  color: #ffffff;
   padding: 30px;
 }
 .hubperritos .texto-hub {
@@ -145,7 +160,7 @@ body {
   display: none;
 }
 .introduccion p {
-  color: white;
+  color: #ffffff;
   font-size: 18px;
 }
 
@@ -160,50 +175,41 @@ body {
 .perritos-adopcion .perro1 {
   grid-area: perro1;
 }
-.perritos-adopcion .perro1 .imagen-card {
-  width: 200px !important;
-  height: 200px !important;
-  margin: auto;
-}
 .perritos-adopcion .perro2 {
   grid-area: perro2;
-}
-.perritos-adopcion .perro2 .imagen-card {
-  width: 200px !important;
-  height: 200px !important;
-  margin: auto;
 }
 .perritos-adopcion .perro3 {
   grid-area: perro3;
 }
-.perritos-adopcion .perro3 .imagen-card {
-  width: 200px !important;
-  height: 200px !important;
-  margin: auto;
-}
 .perritos-adopcion .perro4 {
   grid-area: perro4;
-}
-.perritos-adopcion .perro4 .imagen-card {
-  width: 200px !important;
-  height: 200px !important;
-  margin: auto;
 }
 .perritos-adopcion .perro5 {
   grid-area: perro5;
 }
-.perritos-adopcion .perro5 .imagen-card {
-  width: 200px !important;
-  height: 200px !important;
-  margin: auto;
-}
 .perritos-adopcion .perro6 {
   grid-area: perro6;
 }
-.perritos-adopcion .perro6 .imagen-card {
-  width: 200px !important;
-  height: 200px !important;
-  margin: auto;
+.perritos-adopcion .card {
+  transition: 0.5s;
+}
+.perritos-adopcion .card:hover {
+  transform: scale(1.05);
+}
+.perritos-adopcion .btn {
+  background-color: #000d2b;
+  color: #4e73ca;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.perritos-adopcion .btn:hover {
+  background-color: #4e73ca;
+  color: #000d2b;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 2px solid #000d2b;
 }
 
 .reflexionfinal {
@@ -233,14 +239,18 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   padding: 30px;
 }
 .hubcontacto h1 {
   font-family: "Luckiest Guy";
+  font-weight: bold;
   font-size: 40px;
   color: #4e73ca;
-  font-weight: bold;
+  /* font-family: "Luckiest Guy";
+   font-size: 40px;
+   color: $color-secundario;
+   font-weight: bold;*/
 }
 .hubcontacto .texto-hub {
   font-size: 20px;
@@ -250,18 +260,18 @@ body {
 }
 .hubcontacto .boton {
   background-color: #0026ff;
-  color: white;
+  color: #ffffff;
   padding: 15px;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 15px;
   text-transform: uppercase;
-  border: white solid 1px;
+  border: #ffffff solid 1px;
 }
 .hubcontacto .boton:hover {
   background-color: #000d2b;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 /*seccion contacto*/
@@ -271,7 +281,18 @@ body {
 }
 .seccion-contacto .pautas {
   width: 50%;
-  background-color: aliceblue;
+  text-align: center;
+}
+.seccion-contacto .pautas h3 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 35px;
+}
+.seccion-contacto li {
+  color: #ffffff;
+  list-style-position: inside;
 }
 .seccion-contacto .conteiner-formulario {
   width: 50%;
@@ -288,7 +309,7 @@ body {
   font-size: 35px;
 }
 .seccion-contacto .conteiner-formulario p {
-  color: white;
+  color: #ffffff;
   padding-left: 150px;
   padding-right: 150px;
   margin-bottom: 30px;
@@ -299,7 +320,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 30px;
-  background-color: #4352a8;
+  background-color: #4e73ca;
   border-radius: 20px;
 }
 .seccion-contacto .conteiner-formulario .formulario label {
@@ -315,6 +336,22 @@ body {
 }
 .seccion-contacto .conteiner-formulario .formulario select {
   margin-bottom: 10px;
+}
+.seccion-contacto .conteiner-formulario .ultimas-adopciones {
+  margin-top: 20px;
+}
+.seccion-contacto .conteiner-formulario .ultimas-adopciones h4 {
+  font-size: 35px;
+}
+.seccion-contacto .conteiner-formulario .ultimas-adopciones .bloque-perros {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  column-gap: 15px;
+}
+.seccion-contacto .conteiner-formulario .ultimas-adopciones .bloque-perros img {
+  width: 300px;
+  height: 300px;
 }
 
 /*Body*/
@@ -335,7 +372,7 @@ header .container-fluid .navbar-collapse ul {
   gap: 30px;
 }
 header .container-fluid .navbar-collapse ul .nav-link {
-  color: white;
+  color: #ffffff;
 }
 header .container-fluid .navbar-collapse ul .nav-link:hover {
   color: #4e73ca;
@@ -344,14 +381,14 @@ header .container-fluid .navbar-collapse .form-control {
   background-color: #1b3d8d;
 }
 header .container-fluid .navbar-collapse .btn {
-  color: white;
+  color: #ffffff;
   background-color: #1b3d8d;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
 }
 header .container-fluid .navbar-collapse .btn:hover {
   color: #1b3d8d;
   font-weight: bold;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #1b3d8d;
 }
 
@@ -382,7 +419,7 @@ footer .menu {
 }
 footer .menu a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
 }
 footer .horario {
@@ -432,11 +469,8 @@ footer .copy {
   }
   /*HOME*/
   /*seccion hero*/
-  .hubhome {
-    justify-content: center;
-  }
-  .hubhome p {
-    padding: 20px;
+  .hubhome .texto-hub {
+    padding: 10px;
   }
   /*seccion tarjetas*/
   .tarjetas h2 {
@@ -481,8 +515,12 @@ footer .copy {
     display: none;
   }
   .pagina-adopcion .introduccion .h2-mobile {
+    text-align: center;
+    font-family: "Luckiest Guy";
+    margin: 30px 0px 30px 0px;
+    color: #4e73ca;
+    font-size: 30px;
     display: block;
-    padding: 0px 10px 0px 10px;
   }
   .pagina-adopcion .introduccion p {
     padding: 0px 20px 0px 20px;
@@ -498,6 +536,43 @@ footer .copy {
   }
   .reflexionfinal p {
     padding: 0px 50px 0px 50px;
+  }
+  /*CONTACTO*/
+  /*hero seccion*/
+  .hubcontacto {
+    background-image: url(https://s1.1zoom.me/b5649/37/Dogs_Welsh_Corgi_Trunk_tree_Glance_520800_1080x1920.jpg);
+    background-position: 150%;
+    background-size: cover;
+  }
+  .hubcontacto .texto-hub {
+    padding: 10px;
+    color: #ffffff;
+  }
+  .seccion-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion-contacto .pautas ul, .seccion-contacto .pautas ol {
+    margin-right: 30px;
+  }
+  .seccion-contacto .pautas {
+    width: 100%;
+    padding: 30px;
+  }
+  .seccion-contacto .pautas iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .conteiner-formulario {
+    display: flex;
+    flex-direction: row;
+  }
+  .conteiner-formulario .intro-formulario {
+    width: 100%;
+    text-align: center;
+  }
+  .conteiner-formulario .intro-formulario p {
+    padding: 0px;
   }
   /*FOOTER*/
   footer {

@@ -48,17 +48,17 @@
     /*HOME*/
     /*seccion hero*/
     .hubhome {
-        justify-content: center;
-
-        p {
-            padding: 20px;
+       .texto-hub {
+            padding: 10px;
         }
 
     }
 
+
+
     /*seccion tarjetas*/
     .tarjetas {
-    
+
         h2 {
             font-size: 35px;
         }
@@ -113,8 +113,12 @@
             }
 
             .h2-mobile {
+                text-align: center;
+                font-family: "Luckiest Guy";
+                margin: 30px 0px 30px 0px;
+                color: $color-secundario;
+                font-size: 30px;
                 display: block;
-                padding: 0px 10px 0px 10px;
             }
 
             p {
@@ -139,6 +143,53 @@
             padding: 0px 50px 0px 50px;
         }
     }
+
+    /*CONTACTO*/
+
+    /*hero seccion*/
+    .hubcontacto{
+        background-image: url(https://s1.1zoom.me/b5649/37/Dogs_Welsh_Corgi_Trunk_tree_Glance_520800_1080x1920.jpg);
+        background-position: 150%;
+        background-size: cover;
+        .texto-hub{
+            padding: 10px;
+            color: $color-texto;
+        }
+    }
+
+    .seccion-contacto{
+        display: flex;
+        flex-direction: column;
+       .pautas{
+        ul , ol{
+            margin-right: 30px;
+        }
+        width: 100%;
+        padding: 30px;
+        iframe{
+            width: 300px;
+            height: 200px;
+        }
+       }
+    }
+
+    .conteiner-formulario{
+        display: flex;
+        flex-direction: row;
+   
+        .intro-formulario{
+            width: 100%;
+            text-align: center;
+            
+            p{
+                padding: 0px;
+            }
+        }
+
+    }
+
+
+
 
     /*FOOTER*/
     footer {
