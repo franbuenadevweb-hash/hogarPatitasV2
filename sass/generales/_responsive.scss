@@ -1,4 +1,6 @@
 @use "./variables" as*;
+
+
 @media (max-width: 768px) {
     body{
         
@@ -47,7 +49,7 @@
             }
         }
     }
-
+    
     /*HOME*/
     /*seccion hero*/
     .hubhome {
@@ -169,8 +171,8 @@
 
     /*hero seccion*/
     .hubcontacto {
-        background-image: url(https://s1.1zoom.me/b5649/37/Dogs_Welsh_Corgi_Trunk_tree_Glance_520800_1080x1920.jpg);
-        background-position: 150%;
+        background-image: url(https://thumbs.dreamstime.com/b/perrito-vertical-perro-cachorro-yorkt%C3%A9s-negro-despertado-en-un-sof%C3%A1-rojo-y-listo-para-jugar-con-bola-aislada-fondo-blanco-260177258.jpg);
+        background-position: center;
         background-size: cover;
 
         .texto-hub {

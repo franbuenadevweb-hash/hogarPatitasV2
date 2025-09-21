@@ -1,0 +1,653 @@
+.imagen-base, .perritos-adopcion .perro1 .imagen-card, .perritos-adopcion .perro2 .imagen-card, .perritos-adopcion .perro3 .imagen-card, .perritos-adopcion .perro4 .imagen-card, .perritos-adopcion .perro5 .imagen-card, .perritos-adopcion .perro6 .imagen-card {
+  padding: 20px;
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
+
+.titulo-secundario, .seccion-contacto .conteiner-formulario .ultimas-adopciones h4, .hubperritos h1 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 40px;
+}
+
+/*Pagina index*/
+/*Hub*/
+body {
+  background-color: #000d2b;
+}
+
+.hubhome {
+  background-image: url(../multimedia/fondo\ negro\ perro.jfif);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 88vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 30px;
+}
+.hubhome h1 {
+  font-family: "Luckiest Guy";
+  font-size: 40px;
+  color: #4e73ca;
+  font-weight: bold;
+}
+.hubhome .texto-hub {
+  font-size: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-weight: 400;
+}
+.hubhome .boton {
+  background-color: #0026ff;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: #ffffff solid 1px;
+}
+.hubhome .boton:hover {
+  background-color: #000d2b;
+  color: #ffffff;
+}
+
+/*Tarjetas*/
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.tarjetas h2 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 35px;
+}
+.tarjetas .padre-tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px;
+}
+.tarjetas .padre-tarjetas .divpadre .card {
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 5s ease forwards;
+}
+.tarjetas .padre-tarjetas .divpadre .card h5 {
+  font-weight: bold;
+  color: #000d2b;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas {
+  background-color: #04329c;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.tarjetas .padre-tarjetas .divpadre .card .boton-tarjetas:hover {
+  background-color: #000d2b;
+  color: #ffffff;
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Porque es bueno adoptar?*/
+.seccion-adopcion {
+  text-align: center;
+}
+.seccion-adopcion h2 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 40px;
+}
+.seccion-adopcion p {
+  color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 30px;
+}
+.seccion-adopcion img {
+  display: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #000d2b;
+}
+
+.hubperritos {
+  background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 30px;
+}
+.hubperritos .texto-hub {
+  font-size: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-weight: 400;
+}
+
+.introduccion {
+  text-align: center;
+}
+.introduccion .h2-pc {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 40px;
+}
+.introduccion .h2-mobile {
+  display: none;
+}
+.introduccion p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.perritos-adopcion {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas: "perro1 perro2 perro3" "perro4 perro5 perro6";
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.perritos-adopcion .perro1 {
+  grid-area: perro1;
+}
+.perritos-adopcion .perro2 {
+  grid-area: perro2;
+}
+.perritos-adopcion .perro3 {
+  grid-area: perro3;
+}
+.perritos-adopcion .perro4 {
+  grid-area: perro4;
+}
+.perritos-adopcion .perro5 {
+  grid-area: perro5;
+}
+.perritos-adopcion .perro6 {
+  grid-area: perro6;
+}
+.perritos-adopcion .card {
+  transition: 0.5s;
+}
+.perritos-adopcion .card:hover {
+  transform: scale(1.05);
+}
+.perritos-adopcion .btn {
+  background-color: #000d2b;
+  color: #4e73ca;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.perritos-adopcion .btn:hover {
+  background-color: #4e73ca;
+  color: #000d2b;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 2px solid #000d2b;
+}
+
+.reflexionfinal {
+  margin-top: 70px;
+}
+.reflexionfinal h3 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 30px;
+}
+.reflexionfinal p {
+  padding: 0px 200px 0px 200px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hubcontacto {
+  background-image: url(../multimedia/cccc.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 88vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 30px;
+}
+.hubcontacto h1 {
+  font-family: "Luckiest Guy";
+  font-weight: bold;
+  font-size: 40px;
+  color: #4e73ca;
+  /* font-family: "Luckiest Guy";
+   font-size: 40px;
+   color: $color-secundario;
+   font-weight: bold;*/
+}
+.hubcontacto .texto-hub {
+  font-size: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-weight: 400;
+}
+.hubcontacto .boton {
+  background-color: #0026ff;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: #ffffff solid 1px;
+}
+.hubcontacto .boton:hover {
+  background-color: #000d2b;
+  color: #ffffff;
+}
+
+/*seccion contacto*/
+.seccion-contacto {
+  display: flex;
+  flex-direction: row;
+}
+.seccion-contacto .pautas {
+  width: 50%;
+  text-align: center;
+}
+.seccion-contacto .pautas h3 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 35px;
+}
+.seccion-contacto li {
+  color: #ffffff;
+  list-style-position: inside;
+}
+.seccion-contacto .conteiner-formulario {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.seccion-contacto .conteiner-formulario h2 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0px 30px 0px;
+  color: #4e73ca;
+  font-size: 35px;
+}
+.seccion-contacto .conteiner-formulario p {
+  color: #ffffff;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 30px;
+}
+.seccion-contacto .conteiner-formulario .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: #4e73ca;
+  border-radius: 20px;
+}
+.seccion-contacto .conteiner-formulario .formulario label {
+  padding: 10px;
+  color: #000d2b;
+  font-weight: bold;
+}
+.seccion-contacto .conteiner-formulario .formulario input {
+  padding: 5px;
+}
+.seccion-contacto .conteiner-formulario .formulario input:hover {
+  background-color: grey;
+}
+.seccion-contacto .conteiner-formulario .formulario select {
+  margin-bottom: 10px;
+}
+.seccion-contacto .conteiner-formulario .ultimas-adopciones {
+  margin-top: 20px;
+}
+.seccion-contacto .conteiner-formulario .ultimas-adopciones h4 {
+  font-size: 35px;
+}
+.seccion-contacto .conteiner-formulario .ultimas-adopciones .bloque-perros {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  column-gap: 15px;
+}
+.seccion-contacto .conteiner-formulario .ultimas-adopciones .bloque-perros img {
+  width: 300px;
+  height: 300px;
+}
+
+/*Body*/
+body {
+  background-color: #000d2b;
+}
+
+/*Header*/
+header {
+  height: 100px;
+}
+header .container-fluid a img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+header .container-fluid .navbar-collapse ul {
+  gap: 30px;
+}
+header .container-fluid .navbar-collapse ul .nav-link {
+  color: #ffffff;
+}
+header .container-fluid .navbar-collapse ul .nav-link:hover {
+  color: #4e73ca;
+}
+header .container-fluid .navbar-collapse .form-control {
+  background-color: #1b3d8d;
+}
+header .container-fluid .navbar-collapse .btn {
+  color: #ffffff;
+  background-color: #1b3d8d;
+  border: 1px solid #ffffff;
+}
+header .container-fluid .navbar-collapse .btn:hover {
+  color: #1b3d8d;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid #1b3d8d;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas: "menu horario contacto" "copy copy copy";
+  justify-content: space-around;
+  color: #ffffff;
+  background-color: #4e73ca;
+  padding-top: 50px;
+  align-items: start;
+}
+footer h3 {
+  text-align: center;
+  font-family: "Luckiest Guy";
+  margin: 30px 0;
+  color: #000d2b;
+  font-size: 30px;
+  font-weight: bold;
+}
+footer p {
+  font-size: 20px;
+}
+footer .menu {
+  grid-area: menu;
+}
+footer .menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+footer .horario {
+  grid-area: horario;
+}
+footer .footercontacto {
+  grid-area: contacto;
+}
+footer .copy {
+  margin-top: 10px;
+  grid-area: copy;
+  text-align: center;
+  color: #000d2b;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  /*HEADER*/
+  header img {
+    width: 60px;
+    height: 60px;
+  }
+  header .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  header .navbar .collapse .d-flex {
+    display: none !important;
+  }
+  header .navbar .collapse .navbar-nav {
+    background-color: #1b3d8d;
+    text-align: center;
+    border: 1px solid white;
+    gap: 0;
+  }
+  header .navbar .collapse .navbar-nav .nav-item {
+    border: 1px solid white;
+    padding: 5px;
+  }
+  header .navbar .navbar-toggler {
+    border: 0;
+  }
+  header .navbar .navbar-toggler:focus, header .navbar .navbar-toggler:active, header .navbar .navbar-toggler:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+  /*HOME*/
+  /*seccion hero*/
+  .hubhome {
+    background-image: url(https://www.shutterstock.com/image-photo/breton-spaniel-dog-black-scarf-600nw-2461745759.jpg);
+    background-size: cover;
+  }
+  .hubhome .texto-hub {
+    padding: 10px;
+  }
+  /*seccion tarjetas*/
+  .tarjetas h2 {
+    font-size: 35px;
+  }
+  .tarjetas .padre-tarjetas {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 25px;
+  }
+  .tarjetas .card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 5s ease forwards;
+  }
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*seccion adopcion*/
+  .seccion-adopcion {
+    padding: 30px;
+  }
+  .seccion-adopcion p {
+    padding: 0px;
+  }
+  .seccion-adopcion iframe {
+    margin-bottom: 20px;
+    justify-content: center;
+    margin: 0px;
+  }
+  .seccion-adopcion img {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  /*PAGINA ADOPCION DE PERROS*/
+  .hubperritos {
+    background-image: url(../multimedia/fondo\ perritos\ hub.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .hubperritos .texto-hub {
+    padding: 20px;
+  }
+  .pagina-adopcion {
+    padding: 20px;
+  }
+  .pagina-adopcion .introduccion .h2-pc {
+    display: none;
+  }
+  .pagina-adopcion .introduccion .h2-mobile {
+    text-align: center;
+    font-family: "Luckiest Guy";
+    margin: 30px 0px 30px 0px;
+    color: #4e73ca;
+    font-size: 30px;
+    display: block;
+  }
+  .pagina-adopcion .introduccion p {
+    padding: 0px 20px 0px 20px;
+  }
+  .pagina-adopcion .perritos-adopcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reflexionfinal h3 {
+    padding: 0px 10px 0px 10px;
+    font-size: 35px;
+  }
+  .reflexionfinal p {
+    padding: 0px 50px 0px 50px;
+  }
+  /* CONTACTO */
+  /*hero seccion*/
+  .hubcontacto {
+    background-image: url(https://thumbs.dreamstime.com/b/perrito-vertical-perro-cachorro-yorkt%C3%A9s-negro-despertado-en-un-sof%C3%A1-rojo-y-listo-para-jugar-con-bola-aislada-fondo-blanco-260177258.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .hubcontacto .texto-hub {
+    padding: 10px;
+    color: #ffffff;
+  }
+  .seccion-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion-contacto .pautas ul,
+  .seccion-contacto .pautas ol {
+    margin-right: 30px;
+  }
+  .seccion-contacto .pautas {
+    width: 100%;
+    padding: 30px;
+  }
+  .seccion-contacto .pautas iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .seccion-contacto .conteiner-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .seccion-contacto .conteiner-formulario .intro-formulario {
+    width: 100%;
+    text-align: center;
+  }
+  .seccion-contacto .conteiner-formulario .intro-formulario p {
+    padding: 0px;
+  }
+  .seccion-contacto .conteiner-formulario .bloque-perros {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .seccion-contacto .conteiner-formulario .bloque-perros img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+  }
+  /*FOOTER*/
+  footer {
+    display: grid;
+    grid-template-areas: "menu" "horario" "footercontacto" "copy";
+    margin: auto;
+    text-align: center;
+  }
+  footer .menu {
+    grid-area: menu;
+  }
+  footer .menu ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  footer .menu ul li {
+    list-style-position: inside;
+    text-align: center;
+  }
+  footer .horario {
+    grid-area: horario;
+  }
+  footer .footercontacto {
+    grid-area: footercontacto;
+  }
+  footer .copy {
+    grid-area: copy;
+  }
+}
+
+/*# sourceMappingURL=estilosSass.css.map */
