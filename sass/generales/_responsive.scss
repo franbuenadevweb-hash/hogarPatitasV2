@@ -2,8 +2,12 @@
 
 
 @media (max-width: 768px) {
-    body{
-        
+    h1 {
+        text-shadow:
+            2px 2px 0 black,
+            -2px 2px 0 black,
+            2px -2px 0 black,
+            -2px -2px 0 black;
     }
 
     /*HEADER*/
@@ -49,14 +53,20 @@
             }
         }
     }
-    
+
     /*HOME*/
     /*seccion hero*/
     .hubhome {
         background-image: url(https://www.shutterstock.com/image-photo/breton-spaniel-dog-black-scarf-600nw-2461745759.jpg);
         background-size: cover;
+
         .texto-hub {
             padding: 10px;
+            text-shadow:
+                1px 1px 0 black,
+                -1px 1px 0 black,
+                1px -1px 0 black,
+                -1px -1px 0 black;
         }
 
     }
@@ -77,15 +87,15 @@
             row-gap: 25px;
         }
 
-        .card{
+        .card {
             opacity: 0;
             transform: translateY(20px);
             animation: aparecer 5s ease forwards;
 
         }
 
-        @keyframes aparecer{
-            to{
+        @keyframes aparecer {
+            to {
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -120,7 +130,12 @@
         background-position: center;
 
         .texto-hub {
-            padding: 20px;
+            padding: 10px;
+            text-shadow:
+                1px 1px 0 black,
+                -1px 1px 0 black,
+                1px -1px 0 black,
+                -1px -1px 0 black;
         }
     }
 
@@ -171,13 +186,19 @@
 
     /*hero seccion*/
     .hubcontacto {
-        background-image: url(../multimedia/fondoresponsivepaginacontacto.png);
+        background-image: url("../multimedia/clean.png");
         background-position: center;
         background-size: cover;
 
         .texto-hub {
             padding: 10px;
             color: $color-texto;
+            text-shadow:
+                1px 1px 0 black,
+                -1px 1px 0 black,
+                1px -1px 0 black,
+                -1px -1px 0 black;
+
         }
     }
 

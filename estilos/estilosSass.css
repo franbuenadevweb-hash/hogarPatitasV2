@@ -453,6 +453,9 @@ footer .copy {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+  }
   /*HEADER*/
   header img {
     width: 60px;
@@ -490,6 +493,7 @@ footer .copy {
   }
   .hubhome .texto-hub {
     padding: 10px;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
   }
   /*seccion tarjetas*/
   .tarjetas h2 {
@@ -536,7 +540,8 @@ footer .copy {
     background-position: center;
   }
   .hubperritos .texto-hub {
-    padding: 20px;
+    padding: 10px;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
   }
   .pagina-adopcion {
     padding: 20px;
@@ -570,13 +575,14 @@ footer .copy {
   /* CONTACTO */
   /*hero seccion*/
   .hubcontacto {
-    background-image: url(../multimedia/fondoresponsivepaginacontacto.png);
+    background-image: url("../multimedia/clean.png");
     background-position: center;
     background-size: cover;
   }
   .hubcontacto .texto-hub {
     padding: 10px;
     color: #ffffff;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
   }
   .seccion-contacto {
     display: flex;
