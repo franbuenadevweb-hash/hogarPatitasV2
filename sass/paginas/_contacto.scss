@@ -18,6 +18,11 @@
 
     h1 {
         @include titulo(40px, $color-secundario);
+         text-shadow:
+            2px 2px 0 black,
+            -2px 2px 0 black,
+            2px -2px 0 black,
+            -2px -2px 0 black;
        /* font-family: "Luckiest Guy";
         font-size: 40px;
         color: $color-secundario;
@@ -29,6 +34,11 @@
         padding-left: 150px;
         padding-right: 150px;
         font-weight: 400;
+          text-shadow:
+                1px 1px 0 black,
+                -1px 1px 0 black,
+                1px -1px 0 black,
+                -1px -1px 0 black;
     }
 
     .boton {
