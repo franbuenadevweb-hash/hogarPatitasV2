@@ -38,12 +38,14 @@ body {
   font-size: 40px;
   color: #4e73ca;
   font-weight: bold;
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
 }
 .hubhome .texto-hub {
   font-size: 20px;
   padding-left: 150px;
   padding-right: 150px;
   font-weight: 400;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
 }
 .hubhome .boton {
   background-color: #0026ff;
@@ -154,11 +156,15 @@ body {
   color: #ffffff;
   padding: 30px;
 }
+.hubperritos h1 {
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+}
 .hubperritos .texto-hub {
   font-size: 20px;
   padding-left: 150px;
   padding-right: 150px;
   font-weight: 400;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
 }
 
 .introduccion {
@@ -262,6 +268,7 @@ body {
   font-weight: bold;
   font-size: 40px;
   color: #4e73ca;
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
   /* font-family: "Luckiest Guy";
    font-size: 40px;
    color: $color-secundario;
@@ -272,6 +279,7 @@ body {
   padding-left: 150px;
   padding-right: 150px;
   font-weight: 400;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
 }
 .hubcontacto .boton {
   background-color: #0026ff;
