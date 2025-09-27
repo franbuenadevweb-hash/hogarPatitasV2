@@ -1,115 +1,128 @@
-@use "./variables" as*;
+@use "./variables" as *;
 
-
-/*Body*/
 body {
-    background-color: $color-fondo;
+  background-color: $color-fondo;
 }
 
-/*Header*/
 header {
-    height: 100px;
+  height: 100px;
 
-    .container-fluid {
-        a img {
-            height: 70px;
-            width: 70px;
-            border-radius: 50px;
-        }
-
-        .navbar-collapse {
-
-            ul {
-                gap: 30px;
-
-                .nav-link {
-                    color: $color-texto;
-
-                    &:hover {
-                        color: $color-secundario;
-                    }
-
-                }
-
-            }
-
-            .form-control {
-                background-color: #1b3d8d;
-            }
-
-            .btn {
-                color: $color-texto;
-                background-color: #1b3d8d;
-                border: 1px solid $color-texto;
-
-                &:hover {
-                    color: #1b3d8d;
-                    font-weight: bold;
-                    background-color: $color-texto;
-                    border: 1px solid #1b3d8d;
-                }
-            }
-
-
-
-
-        }
+  .container-fluid {
+    a img {
+      height: 70px;
+      width: 70px;
+      border-radius: 50px;
     }
+
+    .navbar-collapse {
+      ul.navbar-nav {
+        background-color: #1b3d8d;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+
+        .nav-link {
+          color: #ffffff;
+          font-size: 18px;
+
+          &:hover {
+            color: $color-secundario;
+          }
+        }
+      }
+
+      .form-control {
+        background-color: #1b3d8d;
+      }
+
+      .btn {
+        color: $color-texto;
+        background-color: #1b3d8d;
+        border: 1px solid $color-texto;
+
+        &:hover {
+          color: #1b3d8d;
+          font-weight: bold;
+          background-color: $color-texto;
+          border: 1px solid #1b3d8d;
+        }
+      }
+    }
+  }
 }
-/* Footer */
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    ul.navbar-nav {
+      background-color: transparent;
+      text-align: left;
+      gap: 30px;
+
+      .nav-link {
+        color: $color-texto;
+        font-size: 16px;
+
+        &:hover {
+          color: $color-secundario;
+        }
+      }
+    }
+  }
+}
+
 footer {
-    margin-top: 50px;
-    display: grid;
-    grid-template-areas:
-        "menu horario contacto"
-        "copy copy copy";
-    justify-content: space-around;
-    color: $color-texto;
-    background-color: $color-secundario;
-    padding-top: 50px;
-    align-items: start;
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas:
+    "menu horario contacto"
+    "copy copy copy";
+  justify-content: space-around;
+  color: $color-texto;
+  background-color: $color-secundario;
+  padding-top: 50px;
+  align-items: start;
 
-    h3 {
-        text-align: center;
-        font-family: "Luckiest Guy";
-        margin: 30px 0;
-        color: $color-primario;
-        font-size: 30px;
-        font-weight: bold;
+  h3 {
+    text-align: center;
+    font-family: "Luckiest Guy";
+    margin: 30px 0;
+    color: $color-primario;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .menu {
+    grid-area: menu;
+
+    a {
+      text-decoration: none;
+      color: $color-texto;
+      font-size: 20px;
     }
+  }
 
-    p {
-        font-size: 20px;
-    }
+  .horario {
+    grid-area: horario;
+  }
 
-    .menu {
-        grid-area: menu;
+  .footercontacto {
+    grid-area: contacto;
+  }
 
-        a {
-            text-decoration: none;
-            color: $color-texto;
-            font-size: 20px;
-        }
-    }
-
-    .horario {
-        grid-area: horario;
-    }
-
-    .footercontacto {
-        grid-area: contacto;
-    }
-
-    .copy {
-        margin-top: 10px;
-        grid-area: copy;
-        text-align: center;
-        color: $color-primario;
-        font-weight: bold;
-        font-size: 25px;
-    }
+  .copy {
+    margin-top: 10px;
+    grid-area: copy;
+    text-align: center;
+    color: $color-primario;
+    font-weight: bold;
+    font-size: 25px;
+  }
 }
-
 
 
 
